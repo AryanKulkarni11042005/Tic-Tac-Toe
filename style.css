@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #191716;
+}
+
+h1{
+    color: #E6AF2E;
+    font-family: "Noto Serif", serif;
+    font-size: 3rem;
+}
+.container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 4rem;
+}
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+}
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    font-size: 10vmin;
+    border: none;
+    border-radius: 2vmin;
+    background-color: #BEB7A4;
+    color: #3D348B ;
+    font-family: "Roboto", sans-serif;
+}
+#reset-btn {
+    margin-top: 5vmin;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #E6AF2E;
+    color: #191716;
+    font-family: "Noto Serif", serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+#reset-btn:hover {
+    cursor: pointer;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vmin;
+}
+
+.hide2 {
+    display: none;
+}
+#new-btn{
+    margin-top: 5vmin;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #E6AF2E;
+    color: #191716;
+    font-family: "Noto Serif", serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+#new-btn:hover {
+    cursor: pointer;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
+.hide {
+    display: none;
+}
+    
+h2{
+    color: #E6AF2E;
+    font-family: "Noto Serif", serif;
+    font-size: 2rem;
+}
+
+
+/* grey: E0E2DB 
+   gold: E6AF2E
+   purple: 3D348B
+   dark grey:BEB7A4 
+   black: 191716
+*/
