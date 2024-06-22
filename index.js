@@ -67,13 +67,17 @@ function checkWinner() {
       if (pos1Val === pos2Val && pos2Val === pos3Val) {
         $(".box").prop("disabled", "true");
         showWinner(pos1Val);
-      }
-      else if(allBoxesClicked()) {
-        $("h2").text("Match is Tied");
-        $("#new-btn").removeClass("hide");
-        $("#reset-btn").addClass("hide2");
+        return; // Exit the function if a winner is found
       }
     }
+  }
+  
+  // Check for tie situation
+  if (allBoxesClicked()) {
+    $(".box").prop("disabled", "true");
+    $("h2").text("Its a tie");
+    $("#new-btn").removeClass("hide");
+    $("#reset-btn").addClass("hide2");
   }
 }
 $("#reset-btn").on("click", function()
